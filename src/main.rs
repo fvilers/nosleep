@@ -1,3 +1,5 @@
+use nosleep::run;
+
 fn main() {
-    println!("Hello, world!");
+    run();
 }
