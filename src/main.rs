@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use nosleep::{run, Options};
 use std::env;
 
