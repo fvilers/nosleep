@@ -3,5 +3,13 @@
     "**/target": true,
     "**/Cargo.lock": true
   },
-  "cSpell.words": ["KEYBDINPUT", "nosleep", "winapi", "winuser"]
+  "cSpell.words": [
+    "APPDATA",
+    "HKEY",
+    "KEYBDINPUT",
+    "nosleep",
+    "USERPROFILE",
+    "winapi",
+    "winuser"
+  ]
 }
