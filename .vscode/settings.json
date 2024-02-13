@@ -3,5 +3,5 @@
     "**/target": true,
     "**/Cargo.lock": true
   },
-  "cSpell.words": ["nosleep", "winapi", "winbase", "winnt"]
+  "cSpell.words": ["KEYBDINPUT", "nosleep", "winapi", "winuser"]
 }
