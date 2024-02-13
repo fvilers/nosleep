@@ -18,13 +18,16 @@ impl Options {
 #[cfg(windows)]
 pub fn run(options: &Options) {
     use std::{thread, time::Duration};
-    use winapi::um::{winbase::SetThreadExecutionState, winnt::ES_CONTINUOUS};
+    use winapi::um::{
+        winbase::SetThreadExecutionState,
+        winnt::{ES_CONTINUOUS, ES_SYSTEM_REQUIRED},
+    };
 
     let dur = Duration::from_secs(options.timeout_in_seconds);
 
     loop {
         unsafe {
-            SetThreadExecutionState(ES_CONTINUOUS);
+            SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED);
         }
 
         thread::sleep(dur);
